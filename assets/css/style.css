@@ -7,6 +7,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:0}
 :focus-visible{outline:3px solid var(--lime);outline-offset:2px}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.cart-brand{display:flex;justify-content:center;margin:6px 0 8px}.cart-brand img{width:220px;height:88px;object-fit:contain}
 .brand{display:flex;align-items:center;gap:10px}
 .logo{width:44px;height:44px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:22px;border:1px solid var(--line)}
 .brand b{font-size:20px;display:block;line-height:1.1}.brand small{color:var(--mut);font-size:12px}
